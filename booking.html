@@ -5,19 +5,20 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="booking.css">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&display=swap"
-		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
 	<title>Booking</title>
 </head>
 
 <body>
 	<header class="header content">
-		<span class="flex-center"><img src="images/logo.svg" alt="logo representing leafs"></span>
+		<span class="flex-center"> <a href="main.html">
+			<img src="images/logo.svg" alt="logo representing leafs">
+		</a></span>
 	</header>
 	<main>
-		<section class="background">
+		<section class="background flex-responsive">
 			<div class="form-title">
-				<div class="form-large-ft">Reservations</div>
+				<h1>Reservations</h1>
 				<div class="form-med-ft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas cum facere
 					libero ut.</div>
 			</div>
@@ -26,21 +27,21 @@
 					<div class="form-row">
 						<div class="form-wrapper">
 							<label for="name">Full Name</label>
-							<input type="text" class="form-control" id="" placeholder="Enter your full name">
+							<input type="text" class="form-control" id="" placeholder="Enter your full name" required>
 						</div>
 						<div class="form-wrapper">
 							<label for="name">Email Address</label>
-							<input type="email" class="form-control" id="" placeholder="Enter your email address">
+							<input type="email" class="form-control" id="" placeholder="Enter your email address" required>
 						</div>
 						<div class="form-wrapper">
 							<label for="name">Phone Number</label>
-							<input type="tel" class="form-control" id="" placeholder="Enter your mobile number">
+							<input type="tel" class="form-control" id="" placeholder="Enter your mobile number" required>
 						</div>
 					</div>
 					<div class="form-row last">
 						<div class="form-wrapper">
 							<label for="Size of party">Size of party</label>
-							<select name="size" class="form-control">
+							<select name="size" class="form-control" required> 
 								<option value="1">1</option>
 								<option value="2">2</option>
 								<option value="3">3</option>
@@ -52,17 +53,18 @@
 						</div>
 						<div class="form-wrapper">
 							<label for="Date and Time">Date and time</label>
-							<input type="datetime-local">
+							<input class="input-time" type="datetime-local" required>
 						</div>
 						<div class="form-wrapper">
-							<div class="form-large-ft">Enter your message:</div>
+							<label>Enter your message:</label>
 							<textarea name="" rows="10" maxlength="150"></textarea>
 						</div>
 					</div>
-                  <submit class="btn" action="submit">Submit</submit>
+					<input class="btn" type="submit">
 				</form>
 			</div>
 		</section>
+			
 		<h3>
 			<a href="main.html">Go back to the main page.</a>
 		</h3>
