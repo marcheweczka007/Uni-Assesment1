@@ -143,6 +143,6 @@ p {
    }
 
    .three-columns-flex > div {
-      padding-right: 4rem;
+      margin-right: 4rem;
    }
 }
