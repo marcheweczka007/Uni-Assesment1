@@ -34,10 +34,9 @@
       flex: 0 0 calc(50% - 4rem);
    }
 
-   .center {
-      text-align: left;
+   /* .center {
       margin: auto 0;
-   }
+   } */
 
    .flex-around {
       display: flex;

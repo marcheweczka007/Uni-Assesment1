@@ -145,4 +145,8 @@ p {
    .three-columns-flex > div {
       margin-right: 4rem;
    }
+   .center {
+   text-align: left;
+   margin: auto 0;
+}
 }
